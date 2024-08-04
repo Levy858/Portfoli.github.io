@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300..700&display=swap');
+
+a:link {
+color: white;
+}
+a:visited{
+    color: white;
+}
+
 .main {
     text-align: center;
     position: relative;
@@ -12,6 +20,7 @@
     width:60%;
     margin-top: -0.7%;
     margin-bottom: -1%;
+    z-index: 10;
     
 }
 
@@ -27,7 +36,7 @@ body {
     background-image: url('GYny.gif');
     position: fixed;
     background-size: auto;
-    z-index: 20;
+    z-index: -5;
 }
 
  .supe_efekt {
@@ -37,7 +46,7 @@ body {
     background-image: url('TV1\(silniejszy\ kontrast\).png');
     background-size: 13%;
     opacity: 0.15;
-    z-index: 10;
+    z-index: -10;
     animation: CRT_EFEKT 1.4S linear infinite both;
     overflow: hidden;
     pointer-events:none;
@@ -65,11 +74,35 @@ body {
     max-width: 100%;
     border-radius: 10px;
 }
+
+.Contact {
+    position: relative;
+    justify-content:space-around;
+    gap: 2px;
+    display: block;
+    text-align: center;
+}
+
+
+#Email:hover {
+    color: rgb(245, 169, 102);
+    transition: 1s;
+    line-break: anywhere;
+}
+#Discord:hover {
+    color:blue;
+    transition: 1s;
+}
+#Youtube:hover {
+    color: red;
+    position: relative;
+    transition: 1s;
+}
 #czarne_tlo {
     background-color: black;
     position: fixed;
     inset: 0%;
-    z-index: 50;
+    z-index: 5;
     color: white;
     text-align: center;
     animation: czarne_tlo 6s both;
@@ -79,10 +112,18 @@ body {
 #RYVEN__ {
     margin-top: 15%;
     font-size: 150px;
+    animation: Ryven__ 6s both;
+}
+@keyframes Ryven__ {
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    30%{opacity: 1;}
+    40%{opacity: 0;}
+    100%{opacity: 0;}
 }
 @keyframes czarne_tlo {
     0%{opacity: 1;}
-    20%{opacity: 1;}
+    37%{opacity: 1;}
     100%{opacity: 0;}
 }
 
