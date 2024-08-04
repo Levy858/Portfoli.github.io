@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300..700&display=swap');
+.main {
+    text-align: center;
+    position: relative;
+    color: white;
+    border: 5px;
+    border-color: rgb(69, 120, 150);
+    border-style:double;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    margin-top: -0.7%;
+    margin-bottom: -1%;
+    
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url('GYny.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: "Abel", sans-serif;
+    
+}
+.tlo {
+    background-image: url('GYny.gif');
+    position: fixed;
+    background-size: auto;
+    z-index: 20;
+}
+
+ .supe_efekt {
+    position: fixed;
+    inset: -400%;
+    overflow: hidden;
+    background-image: url('TV1\(silniejszy\ kontrast\).png');
+    background-size: 13%;
+    opacity: 0.15;
+    z-index: 10;
+    animation: CRT_EFEKT 1.4S linear infinite both;
+    overflow: hidden;
+    pointer-events:none;
+}
+
+.zdjecia {
+    position: relative;
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.podzdjecie {
+    background-color: rgb(69, 120, 150);
+    padding: 10px;
+    width: 45%;
+    height:fit-content;
+    border-radius: 10px;
+
+    
+}
+.zdj2 {
+    position:relative;
+    max-width: 100%;
+    border-radius: 10px;
+}
+#czarne_tlo {
+    background-color: black;
+    position: fixed;
+    inset: 0%;
+    z-index: 50;
+    color: white;
+    text-align: center;
+    animation: czarne_tlo 6s both;
+    pointer-events: none;
+    
+}
+#RYVEN__ {
+    margin-top: 15%;
+    font-size: 150px;
+}
+@keyframes czarne_tlo {
+    0%{opacity: 1;}
+    20%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes CRT_EFEKT {
+
+    0% {transform:translateY(-5%);}
+
+    20% {transform:translateY(0%);}
+    25% {transform:translateY(5%);}
+    50% {transform:translateY(-5%);}
+
+    80% {transform:translateY(0%);}
+    85% {transform:translateY(5%);}
+
+    100% {transform:translateY(-5%);}
+
+    
+}   
