@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="dodatki.css">
+</head>
+<body class="crt">
+    <div class="tlo">
+
+    </div>  
+    <div id="supe_efekt" class="crt">
+    </div>
+    <div class="main">
+        <div id="zakladki" class="zakladki">
+            <a id="inside_zakladki1" href="about_me.html">About me</a> <a id="inside_zakladki2" href="Modeling.html">My Modeling</a>  <a id="inside_zakladki3" href="Programming.html">My Programming</a>  <a id="inside_zakladki4" href="Contact.html">Contact Me</a>
+        </div>
+        
+        <h1>All my Projects: </h1>
+            
+        <hr>
+        <p>Project no. 1 <Br> My earliest project where i had to throw a trash can at some old lady. <br> I have to say.. it wasnt easy.</p>
+        <div class="zdjecia">
+            
+            <div class="podzdjecie"> <iframe  class="zdj2" src="https://www.youtube.com/embed/MRhuibSKZkE?" ></iframe> </div>
+            <div class="podzdjecie"> <iframe class="zdj2" src="https://www.youtube.com/embed/MRhuibSKZkE?"></iframe> </div>
+        </div>
+        <hr>
+        <p>jsnjfsbhjeskcebjfueeionjds jdv8hu3jbsdjnj jefshjef dhajiwu <Br> hssiueucbsjmnsnbewiuounsmdku sjnm us </p>
+        <div class="zdjecia">
+            <div class="podzdjecie"> <p>hejo</p>  </div>
+            
+        </div>  
+        <hr>
+        <br>    
+
+
+    </div>
+</body>
+<script src="scroll.js">
+    </script>
+    <script>
+        const zakladka1 = document.getElementById('inside_zakladki1');
+        const zakladka2 = document.getElementById('inside_zakladki2');
+        const zakladka3 = document.getElementById('inside_zakladki3');
+        const zakladka4 = document.getElementById('inside_zakladki4');
+        /*
+        position: relative;
+    padding: 1% 2%;
+    background-color: white;
+    color: black;
+
+    transition: 0.5s ease-out;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 1%;
+    border-radius: 15px;
+    border-style:double;
+        */
+       function biala_zakladka3(){
+        zakladka3.style.padding = '1% 2%';
+        zakladka3.style.backgroundColor = 'white';
+        zakladka3.style.color = 'black';
+       }
+       function czarna_zakladka3(){
+        zakladka3.style.padding = '1%';
+        zakladka3.style.backgroundColor = 'black';
+        zakladka3.style.color = 'white';
+       } 
+
+       biala_zakladka3()
+
+
+   zakladka2.addEventListener('mouseover', () => {
+        czarna_zakladka3()
+    }) 
+    zakladka2.addEventListener('mouseout', () => {
+        biala_zakladka3()
+    }) 
+    zakladka1.addEventListener('mouseover', () => {
+        czarna_zakladka3()
+    }) 
+    zakladka1.addEventListener('mouseout', () => {
+        biala_zakladka3()
+    }) 
+    zakladka4.addEventListener('mouseover', () => {
+        czarna_zakladka3()
+    }) 
+    zakladka4.addEventListener('mouseout', () => {
+        biala_zakladka3()
+    }) 
+    </script>
+</html>

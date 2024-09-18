@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="dodatki.css">
+</head>
+<body class="crt">
+    <div class="tlo">
+
+    </div>  
+    <div id="supe_efekt" class="crt">
+    </div>
+    <div class="main">
+        <div id="zakladki" class="zakladki">
+            <a id="inside_zakladki1" href="about_me.html">About me</a> <a id="inside_zakladki2" href="Modeling.html">My Modeling</a>  <a id="inside_zakladki3" href="Programming.html">My Programming</a>  <a id="inside_zakladki4" href="Contact.html">Contact Me</a>
+        </div>
+        
+        <h1>All my Projects: </h1>
+            
+        <hr>
+        <p>Project no. 1  <Br> Green Turtle. </p>
+        <div class="zdjecia">
+            
+            <div class="podzdjecie"> <img style="width: 80%;" class="zdj2" src="Turtolo.png"></img> </div>
+            
+        </div>
+        <hr>
+        <br>
+        <p> Star Wars lightsaber.</p>
+        <div class="zdjecia">
+            <div class="podzdjecie"> <img style="width: 80%;"  class="zdj2" src="Lightsaberwatermark.png"></img></div>
+            
+        </div>  
+        <hr>
+        <br> 
+        <p> Duck the duck.</p>
+            <div class="zdjecia">
+                <div class="podzdjecie"> <img style="width: 80%;"  class="zdj2" src="Duck.png"></img></div>
+                
+            </div>  
+            <hr>
+            <br>  
+        <p> The Communicator from the Star Wars saga. </p>
+            <div class="zdjecia">
+                <div class="podzdjecie"> <img style="width: 80%;"  class="zdj2" src="Com.png"></img></div>
+                
+            </div>  
+            <hr>
+            <br>
+        <p> The Sans from Undertale. </p>
+            <div class="zdjecia">
+                <div class="podzdjecie"> <img style="width: 80%;"  class="zdj2" src="Sansportret1.png"></img></div>
+                
+            </div>  
+            <hr>
+            <br>  
+        <p> Alien. </p>
+            <div class="zdjecia">
+                <div class="podzdjecie"> <img style="width: 80%;"  class="zdj2" src="Alien.png"></img></div>
+                
+            </div>  
+            <hr>
+            <br>  
+            
+    </div>
+</body>
+<script src="scroll.js">
+    </script>
+
+<script>
+    const zakladka1 = document.getElementById('inside_zakladki1');
+    const zakladka2 = document.getElementById('inside_zakladki2');
+    const zakladka3 = document.getElementById('inside_zakladki3');
+    const zakladka4 = document.getElementById('inside_zakladki4');
+    
+    const zdj1 = document.getElementById('zdjecie1')
+    /*
+    position: relative;
+padding: 1% 2%;
+background-color: white;
+color: black;
+
+transition: 0.5s ease-out;
+color: white;
+text-decoration: none;
+background-color: black;
+padding: 1%;
+border-radius: 15px;
+border-style:double;
+    */
+    
+
+
+   function biala_zakladka2(){
+    zakladka2.style.padding = '1% 2%';
+    zakladka2.style.backgroundColor = 'white';
+    zakladka2.style.color = 'black';
+   }
+   function czarna_zakladka2(){
+    zakladka2.style.padding = '1%';
+    zakladka2.style.backgroundColor = 'black';
+    zakladka2.style.color = 'white';
+   } 
+
+
+  
+
+
+   biala_zakladka2()
+
+zakladka1.addEventListener('mouseover', () => {
+    czarna_zakladka2()
+}) 
+zakladka1.addEventListener('mouseout', () => {
+    biala_zakladka2()
+}) 
+zakladka3.addEventListener('mouseover', () => {
+    czarna_zakladka2()
+}) 
+zakladka3.addEventListener('mouseout', () => {
+    biala_zakladka2()
+}) 
+zakladka4.addEventListener('mouseover', () => {
+    czarna_zakladka2()
+}) 
+zakladka4.addEventListener('mouseout', () => {
+    biala_zakladka2()
+}) 
+</script>
+</html>

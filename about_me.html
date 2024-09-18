@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="dodatki.css">
+</head>
+<body class="crt">
+    <div class="tlo">
+
+    </div>  
+    <div id="supe_efekt" class="crt">
+    </div>
+    <div class="main">
+        
+        <div id="zakladki" class="zakladki">
+            <a id="inside_zakladki1" href="about_me.html">About me</a> <a id="inside_zakladki2" href="Modeling.html">My Modeling</a>  <a id="inside_zakladki3" href="Programming.html">My Programming</a>  <a id="inside_zakladki4" href="Contact.html">Contact Me</a>
+        </div>
+        
+        <h1>Full Stack Developer</h1>
+        <img id="zdjecie_profilowe" src="star-lord.gif">
+        <br><br>
+        <label>Hi, I'm a dedicated programmer and 3D modeler with over 1 year of experience in web development and nearly 3 years in 3D modeling. I strive to create innovative solutions that exceed client expectations. Explore my portfolio for examples of my work and client references. I specialize in developing dynamic and responsive web applications as well as crafting detailed 3D models using a variety of technologies and tools.</label>
+        <br><br><hr><br><hr style="width: 70%;"><br>
+        <strong>Programming skills: </strong>
+        <p><strong>Languages: </strong>HTML, CSS, JavaScript, Lua<br>
+        <strong>Web Technologies: </strong> HTML5, CSS3, React, Discord.js, Node., roblox studio<br>
+        <strong>Project Management: </strong>Discord bot Rivia</p>
+
+        <strong>3D Modeling Skills: </strong>
+        <p><strong>Software: </strong>Blender, ZBrush, Quixel Mixer<br>
+        <strong>Tools: </strong> Pen tablet for enhanced precision and quality<br>
+        <strong>Experience: </strong>Nearly 3 years of creating high-quality 3D models for various projects</p>
+        
+        <strong>Additional Information: </strong>
+        <p><strong>Education: </strong>IT profile high school student<br></p>
+    
+            
+
+
+      
+
+    </div>
+</body>
+<script src="scroll.js">
+    /* const czarne_tlo = document.getElementById('czarne_tlo'); 
+    const efek = document.getElementById("supe_efekt");
+    setTimeout(() => {
+        czarne_tlo.remove();
+    }, 6000);
+    */
+
+    </script>
+    <script>
+        const zakladka1 = document.getElementById('inside_zakladki1');
+        const zakladka2 = document.getElementById('inside_zakladki2');
+        const zakladka3 = document.getElementById('inside_zakladki3');
+        const zakladka4 = document.getElementById('inside_zakladki4');
+        /*
+        position: relative;
+    padding: 1% 2%;
+    background-color: white;
+    color: black;
+
+    transition: 0.5s ease-out;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 1%;
+    border-radius: 15px;
+    border-style:double;
+        */
+       function biala_zakladka1(){
+        zakladka1.style.padding = '1% 2%';
+        zakladka1.style.backgroundColor = 'white';
+        zakladka1.style.color = 'black';
+       }
+       function czarna_zakladka1(){
+        zakladka1.style.padding = '1%';
+        zakladka1.style.backgroundColor = 'black';
+        zakladka1.style.color = 'white';
+       } 
+
+       biala_zakladka1()
+
+
+   zakladka2.addEventListener('mouseover', () => {
+        czarna_zakladka1()
+    }) 
+    zakladka2.addEventListener('mouseout', () => {
+        biala_zakladka1()
+    }) 
+    zakladka3.addEventListener('mouseover', () => {
+        czarna_zakladka1()
+    }) 
+    zakladka3.addEventListener('mouseout', () => {
+        biala_zakladka1()
+    }) 
+    zakladka4.addEventListener('mouseover', () => {
+        czarna_zakladka1()
+    }) 
+    zakladka4.addEventListener('mouseout', () => {
+        biala_zakladka1()
+    }) 
+    </script>
+</html>
