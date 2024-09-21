@@ -102,17 +102,13 @@ a:visited{
 body {
     overflow-x: hidden;
     background-image: url('GYny.gif');
-    background-repeat:no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover; /* lub 'contain' w zależności od efektu */
+    background-attachment: fixed; /* Dodano, żeby tło się nie przesuwało */
     font-family: "Abel", sans-serif;
     font-size: 115%;
 }
-.tlo {
-    background-image: url('GYny.gif');
-    position: fixed;
-    background-size: auto;
-    z-index: -5;
-}
+
 
  .supe_efekt {
     position: fixed;
@@ -130,18 +126,50 @@ body {
 .zdjecia {
     position: relative;
     justify-content: center;
+    align-items: center;
     padding: 0px 20px;
     display: flex;
-    gap: 4%;
-    
+    gap: 4%;   
+}
+img {
+  transition: 0.5s ease-out;
+}
+
+.fa-solid.fa-angle-left {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 300%;
+  color: black;
+  transition: 0.5s;
+  opacity: 1;
+}
+.fa-solid.fa-angle-left:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.fa-solid.fa-angle-right {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 300%;
+  color: black;
+  transition: 0.5s;
+  opacity: 1;
+}
+.fa-solid.fa-angle-right:hover{
+  opacity: 0.5;
+  transition: 0.5s;
 }
 .podzdjecie {
-
+  justify-content: center;
+  align-items: center;
     background-color: rgb(27, 131, 133);
     padding: 10px;
     height:fit-content;
     width: fit-content;
     border-radius: 10px;
+    display: flex;
 
     
 }
@@ -151,6 +179,8 @@ body {
     border-style:double;
     border-radius: 10px;
     border-color: black;
+    max-width: 80%;
+    height: auto;
 }
 
 .Contact {
